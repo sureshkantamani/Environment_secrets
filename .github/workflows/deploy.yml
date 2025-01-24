@@ -10,8 +10,8 @@ jobs:
   test:
     #  Adding environment variables to the test job
     env:
-      MONGODB_USERNAME: tirumalasureshsan
-      MONGODB_PASSWORD: l99plftF5QyA4gVn
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       MONGODB_CLUSTER_ADDRESS: cluster0.zurjc.mongodb.net 
       PORT: 8080
     runs-on: ubuntu-latest
